@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "b3e4f4bb739f6b46d13c7380a9690f2a"
+name = "first-app"
+application_url = "https://artificial-formatting-labs-compaq.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "mdcoop.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://artificial-formatting-labs-compaq.trycloudflare.com/auth/callback",
+  "https://artificial-formatting-labs-compaq.trycloudflare.com/auth/shopify/callback",
+  "https://artificial-formatting-labs-compaq.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
